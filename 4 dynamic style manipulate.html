@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .myc1{
+        background-color: red;
+    }
+    .myc2{
+        background-color: aqua;
+    }
+</style>
+<body>
+    
+    <p id="id1" class="myc1" style="color:yellowgreen;">paragraph new</p>
+    <script>
+        var p=document.getElementById("id1");
+        p.className="myc2";
+        console.log(p);
+        console.log(p.classList);
+
+
+
+    </script>
+</body>
+</html>

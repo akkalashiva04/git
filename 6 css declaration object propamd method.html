@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>                                                         
+    <p id="id1" style="background-color: grey; color: black !important;">pargaraph</p>
+    <script>
+        var p=document.getElementById("id1");
+       //csdo means CSSSTYLEDECLARATION OBJECT
+        var csdo=p.style;
+      console.log(csdo.cssText);
+        console.log(p);
+        //CSS TEXT
+        csdo.cssText="font-size:60px;color:blue";
+        console.log(p);
+        console.log(csdo);
+        console.log(csdo.length);
+        console.log(csdo.item(1));
+
+        //CSDO.GETPROPERTYVALUE("NAME");
+        var propval=csdo.getPropertyValue("font-size");
+        console.log(propval);
+        console.log(csdo.getPropertyValue("color"));
+
+        //remove property
+     console.log(csdo.removeProperty("color"));
+     console.log(p);
+
+     //csdo.setproperty("name","value","priority")
+     csdo.setProperty("color","blue","important");
+     console.log(p);
+
+        //important is priority
+        var prop=csdo.getPropertyPriority("color");
+        console.log(prop);
+    
+        console.log(csdo.removeProperty("color"));
+     console.log(p);
+       console.log( csdo.setProperty("font-style","italic","important"));
+        console.log(p);
+    </script>
+</body>
+</html>
